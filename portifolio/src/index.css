@@ -105,8 +105,8 @@ section {
 }
 
 
-.contact {
-  margin: 0 auto;
+.contact{
+  margin: 2em auto;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -182,7 +182,7 @@ section {
   border-radius: 100cap;
 }
 
-.contact:hover {
+.contact:hover, .experience:hover {
   transform: scale(1.03);
   transition: transform 0.3s ease;
 }
@@ -233,7 +233,7 @@ section {
 }
 
 .icone-linguagens {
-  border:double, #282828;
+  border:double #282828;
   align-items: center;
   text-align: center;
   flex-direction: column ; 
@@ -283,18 +283,18 @@ section {
 
 .footer {
   border:double, #202020;
-  padding-top: 20px;
+  padding: 2em;
+  margin-top: 7cap;
   background-color: rgba(40, 40, 40, 0.7);
   border-top-right-radius: 2cap;
   border-top-left-radius: 2cap;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: space-around;
   text-align: center;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
-
 .footer .card-footer {
   display: flex;
   justify-content: center;   
@@ -305,17 +305,15 @@ section {
 }
 .footer-contact{
   display: inline-flex;
-  padding: 20px;
-  gap: 20px;
+  padding: 1.5em 8em;
+  gap: 1em;
   text-align: center;
-  width: auto;
-  max-width: 80vw;
   color: white;
   justify-content: center; 
   align-items: center;
   border: #202020, double;
   background-color: #3a3a3a;
-  border-radius: 10cap;
+  border-radius: 2cap;
   transition: transform 0.3s ease;
 }
 .footer-contact:hover{
@@ -327,7 +325,48 @@ section {
   gap: 30px;
 }
 
-@media (max-width: 768px) {
+.experience{
+  margin: 2em auto;
+  justify-content: center;
+  items-align: center;
+  flex-direction: column;
+  padding: 5em;
+  width: 90%;
+  border:double, #202020;
+  background-color: rgba(40, 40, 40, 0.7);
+  border-radius: 10cap;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.cardExperience{
+  display: block;
+  text-align: center;
+  width: auto;
+  gap: 10px;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+.cardExperience-item {
+  display: flex;
+  border:double #282828;
+  background-color: #3a3a3a;
+  border-radius: 2cap;
+  gap: .5cap;
+  flex-direction: column;
+  text-align: left;
+  padding: 2cap;
+  margin: 2cap;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+.cardExperience-item:hover {
+  background-color: #444444;
+  transform: scale(1.03);
+  transition: transform 0.3s ease;
+}
+
+@media (max-width: 720px) {
   .header-content nav ul {
     flex-direction: row;
     gap: 20px;
