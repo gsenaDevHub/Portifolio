@@ -191,6 +191,8 @@ section {
 
 .skills {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   flex-direction: column;
   align-items: center;
   padding: 40px;
@@ -334,7 +336,6 @@ section {
   .contact {
     flex-direction: column;
     padding: 20px;
-    margin-bottom: -80px;
   }
   .contact-content {
     flex-direction: column;
