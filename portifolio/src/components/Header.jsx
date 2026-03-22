@@ -7,14 +7,14 @@ export function Header() {
         <div className="header-content">
           <nav>
             <ul>
-              <li><a href="#contact">Sobre</a></li>
-              <li><a href="#skills">Habilidades</a></li>
-              <li><a href="#exp">Experiência</a></li>
-              <li><a href="#footer">Contato</a></li>
+              <li><u className="text_sublinhado"><a href="#contact">Sobre</a></u></li>
+              <li><u className="text_sublinhado"><a href="#skills">Habilidades</a></u></li>
+              <li><u className="text_sublinhado"><a href="#exp">Experiência</a></u></li>
+              <li><u className="text_sublinhado"><a href="#footer">Contato</a></u></li>
             </ul>
           </nav>
         </div>
       </header>
-    </>
+  </>
   );
 }

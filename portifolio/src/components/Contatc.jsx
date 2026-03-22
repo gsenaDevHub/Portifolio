@@ -5,7 +5,7 @@ export function Contatc() {
     <div className="contact" id="contact">
       <div className="contact-content">
         <div className="image">
-              <img src="/ft_sobre.webp" alt="Profile" />
+              <img src="/ft_sobre.webp" alt="Profile" size={20}/>
         </div>
         <div className="cardContact">
         {Dev.map((text, index) => (
