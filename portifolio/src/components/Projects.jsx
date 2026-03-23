@@ -9,14 +9,23 @@ export function Project() {
   return (
     <section className="project" id="project"> 
         {Dev.map((text, index) => (
-        <div className="card" key={index}>
-          <div className='card-list'>
-            <h2>Projetos</h2>
+        <div className="project-conteiner" key={index}>
+          <h2>Projetos</h2>
+          <div className='project-list'>
             <br />
-            <p>{text.Projeto2} <br /> <a href="https://alferi-reserva-hoteis.vercel.app" target='_black'>Clique para Acessar o Site</a></p>
+            <div className='projectDiv'>
+              <a href="https://alferi-reserva-hoteis.vercel.app" target='_black'>
+                <img src="/img1.jpg" alt="" />
+              </a>
+              <p>{text.Projeto2}</p>
+            </div>
             <br />
-            <p>{text.Projeto3} <br /> <a href="https://projeto-baga-o-malte.vercel.app" target='_black'>Clique para Acessar o Site</a></p>
-            <br />
+            <div className='projectDiv'>
+              <a href="https://projeto-baga-o-malte.vercel.app" target='_black'>
+                <img src="/img2.jpg" alt="" />
+              </a>
+              <p>{text.Projeto3}</p>
+            </div>
           </div>
         </div>
         ))}

@@ -1,5 +1,4 @@
-import Dev from '../constants/Dev.json';
-import { FaHtml5,FaReact,FaCss3Alt,FaNodeJs,FaPython,FaFigma  } from "react-icons/fa";
+import { FaHtml5,FaReact,FaCss3Alt,FaGitAlt ,FaPython,FaFigma  } from "react-icons/fa";
 import { PiMicrosoftExcelLogoFill } from "react-icons/pi";
 import { IoLogoJavascript } from "react-icons/io5";
 
@@ -26,6 +25,10 @@ export function Skills() {
               <FaHtml5 size={50}/>
               <p>html</p>
             </div>
+            <div className='icone-linguagens'>
+              <FaGitAlt size={50}/>
+              <p>Git</p>
+            </div>
           </div>
           <div className='group-linguagens'>
             <div className='icone-linguagens'>
@@ -40,7 +43,12 @@ export function Skills() {
               <FaFigma size={50}/>
               <p>Figma</p>
             </div>
+            <div className='icone-linguagens'>
+              <FaReact size={50}/>
+              <p>React</p>
+            </div>
           </div>
+          
         </div>
       </div>
     </section>

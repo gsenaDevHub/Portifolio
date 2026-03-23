@@ -20,7 +20,7 @@ body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
   background-color: #202020;
-  background-image: url(/background.png);
+  background-image: url(/background.jpg);
   background-repeat: no-repeat;
   background-size:cover;
 }
@@ -244,18 +244,22 @@ section {
 .group-linguagens {
   display: inline-flex;
   width: 100%;
-  flex-wrap: nowrap;
-  align-items: center;
+  justify-content: center;
   padding: 1.2em;
   gap: 20px;
 }
 
 .icone-linguagens {
-  border:double #fff;
+  display: inline-block;
+  border:2px solid #fff;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px,
+  rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px,
+  rgba(0, 0, 0, 0.09) 0px -3px 5px;
   text-align: center;
   border-radius: 1cap;
-  width: 100%;
+  width: 20%;
   padding: 1em;
+  margin: 1em;
   background-color: #3a3a3a;
   transition: transform 0.5s ease-in-out;
 }
@@ -270,10 +274,9 @@ section {
   gap: 30px;
   width: 100%;
   background-color: rgba(40, 40, 40, 0.7);
-  border:double, #202020;
   padding: 7em;
   border-radius: 5cap;
-  transition: transform 0.5s ease-in, box-shadow 0.5s ease-out;
+  transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
 
 }
 .card-list:hover {
@@ -327,7 +330,7 @@ section {
   align-items: center;
   background-color: #3a3a3a;
   border-radius: 2cap;
-  transition: transform 0.5s ease-in, box-shadow 0.5s ease-out;
+  transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
 
 }
 .footer-contact:hover{
@@ -370,12 +373,69 @@ section {
   padding: 2cap;
   margin: 2cap;
   height: auto;
-  transition: transform 0.3s ease;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px,
+   rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, 
+   rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  transition: transform 0.5s ease-in-out, background-color 0.5s ease-in-out ;
 }
 .cardExperience-item:hover {
   background-color: #444444;
   transform: scale(1.03);
-  transition: transform 0.3s ease;
+}
+.project-conteiner{
+  background-color: rgba(40, 40, 40, 0.7);
+  padding: 7em;
+  border-radius: 5cap;
+  transition: transform 0.5s ease-in, box-shadow 0.5s ease-out;
+  gap: 30px;
+}
+
+.project-list{
+  display: inline-flex;
+  align-items: center;
+  width: auto;
+  height: auto;
+  max-height: 90%;
+  max-width: 100%;
+  margin: 1em;
+}
+
+.projectDiv{
+  display: inline-flex;
+  flex-wrap: wrap;
+  border: 3px solid #000;
+  background-color: #2B2B2B;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, 
+rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, 
+rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border-radius: 1cap;
+  justify-content: center;
+  width: 50%;
+  padding: 1em 1em 3em 1em;
+  margin: 1em;
+  transition: transform 0.5s ease-in-out;
+}
+.projectDiv img{
+  width: 300px;
+  max-width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px,
+   rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, 
+   rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  margin-bottom: 20px;
+  border: grey solid;
+  border-radius: 2cap;
+  transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+.projectDiv:hover, .projectDiv img:hover{
+  transform: scale(1.03);
+}
+.projectDiv img:hover{
+  transform: scale(1.03);
+  box-shadow: var(--neon-box-shadow);
+}
+.project-conteiner:hover{
+  transform: scale(1.03);
+  box-shadow: var(--neon-box-shadow);
 }
 
 @media (max-width: 720px) {
