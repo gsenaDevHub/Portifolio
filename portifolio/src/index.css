@@ -83,33 +83,7 @@ section {
   margin: 0;
   text-decoration: none;
 }
-.header-button {
-  justify-content:space-around ;
-  display: inline-flex;
-  padding: 10px;
-  align-items: center;
-  width: auto;
-  height: 32px;
-  gap: 5px;
-  background-color: #25D366;
-  border-radius: 1cap;
-  transition: ease 0.3s;
-  cursor: pointer;
-  
-}
-.header-button:hover{
-  transform: scale(1.05);
-  transition: ease 0.3s;
-}
-.header-button button{
-  width: 80px;
-  height: 20px;
-  font-size: 18px;
-  text-decoration: none;
-  background-color: #25D366;
-  border: none;
-  cursor: pointer;
-}
+
 
 .text_sublinhado a {
   position: relative;
@@ -142,7 +116,7 @@ section {
   width: 90%; 
   text-align: center;
   background-color: rgba(40, 40, 40, 0.7);
-  border-radius: 10cap;
+  border-radius: 100px;
   transition: transform 0.5s ease-in, box-shadow 0.5s ease-out;
 }
 .contact h2{
@@ -197,7 +171,7 @@ section {
   overflow: hidden;
   width: 350px;
   height: 350px;
-  border-radius: 5cap;
+  border-radius: 50px;
   transition: transform 0.5s ease-in, box-shadow 0.5s ease-out;
 }
 .image img:hover {
@@ -214,8 +188,8 @@ section {
 
 .skills {
   margin: 2.5em auto;
-  display: flexbox;
-  border-radius: 10cap;
+  display: flex;
+  border-radius: 100px;
   width: 90vw;
   text-align: center;
   justify-content: center;
@@ -223,8 +197,8 @@ section {
 
   .project {
   margin: 2.5em auto;
-  display: flexbox;
-  border-radius: 10cap;
+  display: flex;
+  border-radius: 100px;
   width: 90vw;
   text-align: center;
   justify-content: center;
@@ -256,7 +230,7 @@ section {
   rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px,
   rgba(0, 0, 0, 0.09) 0px -3px 5px;
   text-align: center;
-  border-radius: 1cap;
+  border-radius: 10px;
   width: 20%;
   padding: 1em;
   margin: 1em;
@@ -275,7 +249,7 @@ section {
   width: 100%;
   background-color: rgba(40, 40, 40, 0.7);
   padding: 7em;
-  border-radius: 5cap;
+  border-radius: 50px;
   transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
 
 }
@@ -300,10 +274,10 @@ section {
 .footer {
   border:double, #202020;
   padding: 2em;
-  margin-top: 7cap;
+  margin-top: 70px;
   background-color: rgba(40, 40, 40, 0.7);
-  border-top-right-radius: 2cap;
-  border-top-left-radius: 2cap;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -329,7 +303,7 @@ section {
   justify-content: center; 
   align-items: center;
   background-color: #3a3a3a;
-  border-radius: 2cap;
+  border-radius: 20px;
   transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
 
 }
@@ -350,7 +324,7 @@ section {
   width: 90%;
   border:double, #202020;
   background-color: rgba(40, 40, 40, 0.7);
-  border-radius: 10cap;
+  border-radius: 100px;
   transition: transform 0.5s ease-in, box-shadow 0.5s ease-out;
 }
 
@@ -366,12 +340,12 @@ section {
   display: flex;
   border:double #fff;
   background-color: transparent;
-  border-radius: 2cap;
-  gap: .5cap;
+  border-radius: 20px;
+  gap: 5px;
   flex-direction: column;
   text-align: left;
-  padding: 2cap;
-  margin: 2cap;
+  padding: 20px;
+  margin: 20px;
   height: auto;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px,
    rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, 
@@ -385,7 +359,7 @@ section {
 .project-conteiner{
   background-color: rgba(40, 40, 40, 0.7);
   padding: 7em;
-  border-radius: 5cap;
+  border-radius: 50px;
   transition: transform 0.5s ease-in, box-shadow 0.5s ease-out;
   gap: 30px;
 }
@@ -408,7 +382,7 @@ section {
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, 
 rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, 
 rgba(0, 0, 0, 0.09) 0px -3px 5px;
-  border-radius: 1cap;
+  border-radius: 10px;
   justify-content: center;
   width: 50%;
   padding: 1em 1em 3em 1em;
@@ -423,7 +397,7 @@ rgba(0, 0, 0, 0.09) 0px -3px 5px;
    rgba(0, 0, 0, 0.09) 0px -3px 5px;
   margin-bottom: 20px;
   border: grey solid;
-  border-radius: 2cap;
+  border-radius: 20px;
   transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
 }
 .projectDiv:hover, .projectDiv img:hover{
@@ -467,7 +441,7 @@ rgba(0, 0, 0, 0.09) 0px -3px 5px;
     width: 85vw;
     max-width: 100vw;
     padding: 20px;
-    border-radius: 5cap;
+    border-radius: 50px;
   }
   .card-contact{
     width: 100%;
