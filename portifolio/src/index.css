@@ -105,8 +105,16 @@ section {
   display: flex;
   border-radius: 100px;
   justify-content: center;
-  width: 100%;
- 
+  flex-direction: column;
+  margin: 60px auto, 0 , auto; 
+  padding: 100px;
+  border:double, #202020;
+  gap: 40px;
+  width: 90%; 
+  text-align: center;
+  background-color: rgba(40, 40, 40, 0.7);
+  border-radius: 10cap;
+  transition: transform 0.5s ease-in, box-shadow 0.5s ease-out;
 }
 .contact h2{
   font-size: 2em;
