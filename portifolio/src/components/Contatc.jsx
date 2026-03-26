@@ -13,7 +13,7 @@ export function Contatc() {
             
             <div className="card-identity">
               <h2>Sobre Mim</h2>
-              <h3>Gabriel Henrique de Matos Sena </h3><br />
+              <h3>Gabriel Henrique de Matos Sena </h3>
               <p>
                 Estudante de Engenharia de Software com experiência em Python, 
                 JavaScript, Node.js, React, HTML e CSS, e conhecimentos em Excel. 

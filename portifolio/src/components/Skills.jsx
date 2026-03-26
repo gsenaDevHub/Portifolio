@@ -2,7 +2,7 @@ import { FaHtml5,FaReact,FaCss3Alt,FaGitAlt ,FaPython,FaFigma  } from "react-ico
 import { PiMicrosoftExcelLogoFill } from "react-icons/pi";
 import { IoLogoJavascript } from "react-icons/io5";
 
-
+const number = 50;
 
 export function Skills() {
   return (
@@ -11,44 +11,56 @@ export function Skills() {
       <div className='card'>
         <div className='card-list'>
           <h2>Linguagens e Ferramentas</h2>
-          <br />
           <div className='group-linguagens'>
-            <div className='icone-linguagens'>
-              <FaPython size={50}/>
-              <p>Python</p>
-              </div>
-            <div className='icone-linguagens'>
-              <IoLogoJavascript size={50}/>
-              <p>JavaScript</p>
+            <div className='skils-linguagens'>
+              <article>
+                <FaPython size={number} className="icons-linguagens"/>
+                <p>Python</p>
+              </article>
+          </div>
+            <div className='skils-linguagens'>
+              <article>
+                <IoLogoJavascript size={number} className="icons-linguagens"/>
+                <p>JavaScript</p>
+              </article>
             </div>
-            <div className='icone-linguagens'>
-              <FaHtml5 size={50}/>
-              <p>html</p>
+            <div className='skils-linguagens'>
+              <article>
+                <FaHtml5 size={number} className="icons-linguagens"/>
+                <p>html</p>
+              </article>
             </div>
-            <div className='icone-linguagens'>
-              <FaGitAlt size={50}/>
-              <p>Git</p>
+            <div className='skils-linguagens'>
+              <article>
+                <FaGitAlt size={number} className="icons-linguagens"/>
+                <p>Git</p>
+              </article>
+            </div>
+            <div className='skils-linguagens'>
+              <article>
+                <FaCss3Alt size={number} className="icons-linguagens"/>
+                <p>Css</p>
+              </article>
+            </div>
+            <div className='skils-linguagens'>
+              <article>
+                <PiMicrosoftExcelLogoFill size={number} className="icons-linguagens"/>
+                <p>Microsoft Excel</p>
+              </article>
+            </div>
+            <div className='skils-linguagens'>
+              <article>
+                <FaFigma size={number} className="icons-linguagens"/>
+                <p>Figma</p>
+              </article>
+            </div>
+            <div className='skils-linguagens'>
+              <article>
+                <FaReact size={number} className="icons-linguagens"/>
+                <p>React</p>
+              </article>
             </div>
           </div>
-          <div className='group-linguagens'>
-            <div className='icone-linguagens'>
-              <FaCss3Alt size={50}/>
-              <p>Css</p>
-            </div>
-            <div className='icone-linguagens'>
-              <PiMicrosoftExcelLogoFill size={50}/>
-              <p>Microsoft Excel</p>
-            </div>
-            <div className='icone-linguagens'>
-              <FaFigma size={50}/>
-              <p>Figma</p>
-            </div>
-            <div className='icone-linguagens'>
-              <FaReact size={50}/>
-              <p>React</p>
-            </div>
-          </div>
-          
         </div>
       </div>
     </section>
