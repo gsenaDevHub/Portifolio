@@ -4,6 +4,7 @@ import { Footer } from "./components/Footer"
 import { Contatc } from "./components/Contatc"
 import { Experience } from "./components/Experience"
 import { Project } from "./components/Projects"
+import { Education } from "./components/Education"
 
 function App() {
 
@@ -11,6 +12,7 @@ function App() {
     <>
       <Header/>
       <Contatc/>
+      <Education/>
       <Skills/>
       <Project/>
       <Experience/>

@@ -7,32 +7,21 @@ export function Contatc() {
         <div className="image">
               <img src="/ft_sobre.webp" alt="Profile" size={20}/>
         </div>
-        <div className="cardContact">
-        {Dev.map((text, index) => (
-          <div key={index}>
-            
+        <div className="cardContact">            
             <div className="card-identity">
               <h2>Sobre Mim</h2>
               <h3>Gabriel Henrique de Matos Sena </h3>
               <p>
-                Estudante de Engenharia de Software com experiência em Python, 
-                JavaScript, Node.js, React, HTML e CSS, e conhecimentos em Excel. 
-                Proativo e comunicativo, busco aprendizado constante e aplico minhas.
-                Procuro oportunidades para crescer profissionalmente, contribuindo com soluções 
-                criativas e eficientes em tecnologia.
+                Sou estudante de Engenharia de Software com experiência em Python, 
+                JavaScript, React, HTML e CSS, além de conhecimentos em Excel e <strong>Figma</strong>. Participei 
+                de projetos acadêmicos e pessoais voltados para desenvolvimento web. 
+                Proativo e comunicativo, acredito que tecnologia é uma ferramenta para 
+                transformar ideias em soluções reais. Tenho interesse em aprofundar meus 
+                conhecimentos em front-end e metodologias ágeis, e busco oportunidades 
+                que me permitam crescer profissionalmente enquanto contribuo para projetos 
+                inovadores.
               </p>
-            </div>
-            <div className='card-education'>
-              <ul style={{ color:"white", padding: 0 }}>
-                <li><p>{text.CursoGraduação}</p></li>
-                <li><p>{text.CursoTec}</p></li>
-                <li><p>{text.CursoExtra}</p></li>
-                <li><p>{text.CursoExtra2}</p></li>
-                <li><p>{text.CursoExtra3}</p></li>
-              </ul>
-            </div>
           </div>
-        ))}
         </div>
       </div>
     </div>

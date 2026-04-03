@@ -7,7 +7,6 @@
 
 } 
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -16,8 +15,6 @@ html {
 }
 
 body {
-  margin: 0;
-  font-family: 'Poppins', sans-serif;
   background-color: #202020;
   background-image: url(/background.jpg);
   background-repeat: no-repeat;
@@ -26,18 +23,19 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
-  
-  font-weight: 600;
-  font-size: 1.2em small sans-serif;
+  font: 1.4em 600 'Poppins', sans-serif;
   color: white;
 }
 
-p, a {
+p, a, li, u {
   text-decoration: none;
-  margin: 0;
-  font-weight: 300;
+  list-style-type: none;
   color: white;
-  font-size: 0.5em small sans-serif;
+  font-size: 1em 500 'Poppins', sans-serif;
+}
+
+strong {
+  font:  1.2em 800 'Poppins', sans-serif;
 }
 
 section {
@@ -46,107 +44,45 @@ section {
   
 }
 
-/* Menu */
-
-.header{
-  display: flex;
-  text-align: center;
-  align-items: center;
-  padding: 20px;
-  background-color: transparent;
-  justify-content: center;
-  opacity: 0.3;
-  margin-bottom: 30px;
-  transition: opacity 0.4s, transform 0.4s, background-color 0.4s, scroll-behavior 0.4s;
-}
-.header:hover {
-  opacity: 1;
-  pointer-events: auto;
-  transform: translateY(0);
-  background-color: rgba(40, 40, 40, 0.5);
-}
-
-.header-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 20px;
-}
-.header-content nav ul{
-  list-style: none;
-  display: flex;
-  gap: 25px;
-  padding: 0;
-  font-size: 1.2em;
-  transition: color 0.3s ease;
-  margin: 0;
-  text-decoration: none;
-}
-.text_sublinhado a {
-  position: relative;
-}
-
-.text_sublinhado a::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -2px;
-  width: 0%;
-  height: 2px;
-  background-color: #fff;
-  transition: width 0.3s ease-in-out;
-}
-
-.text_sublinhado a:hover::after {
-  width: 100%;
-}
-
 .contact{
   display: flex;
   border-radius: 100px;
   justify-content: center;
   width: 100%;
- 
 }
+
 .contact h2{
   font-size: 2em;
   margin-bottom: 20px;
 }
 .contact-content {
-  display: flex;
-  padding: 100px;
-  border:double, #202020;
+  display: inline-flex;
+  margin: 2em;
   width: auto;
   max-width: 1361.76px; 
+  padding: 50px;
+  border:double, #202020;
   text-align: center;
   background-color: rgba(40, 40, 40, 0.7);
   border-radius: 2em;
-  transition: transform 0.5s ease-in, box-shadow 0.5s ease-out;
+  transition: all 0.5s ease-in-out;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
 }
 .card-identity{
-  display: flex;
+  display: inline-block;
   flex-direction: column;
-  text-align: justify;
+  justify-content: center;
   align-items: center;
-  width: 100%;
   padding: 20px;
 }
 .card-identity h2, .card-identity h3, .card-identity p{
   margin: 10px 0;
 }
- .card-education{
-  display: flex;
-  flex-direction: column;
-  text-align: justify;
-  align-items:  first baseline;
-  width: 100%;
-  padding: 20px;
-}
+
 
 .card-contact{
-  display:inline-flex;
+  display:inline-block;
   flex-direction: row;
   justify-content: space-around;
   text-align: center;
@@ -158,6 +94,9 @@ section {
   gap: 10px;
   align-items: center;
 }
+.image{
+  justify-content: center;
+}
 .image img {
   overflow: hidden;
   max-width: 350px;
@@ -165,7 +104,7 @@ section {
   max-height: 350px;
   height: auto;
   border-radius: 5cap;
-  transition: transform 0.5s ease-in, box-shadow 0.5s ease-out;
+  transition: all 0.5s ease-in-out;
 }
 .image img:hover {
   transform: scale(1.01);
@@ -176,6 +115,74 @@ section {
   transform: scale(1.01);
   box-shadow: var(--neon-box-shadow);
 }
+
+/* Education */
+
+.educations{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.education-container{
+  display: flex;
+  text-align: center;
+  margin: 2em;
+  flex-direction: column;
+  width: auto;
+  max-width: 1361.51px; 
+  justify-content: center;
+  padding: 50px;
+  border:double, #202020;
+  background-color: rgba(40, 40, 40, 0.7);
+  transition: all 0.5s ease-in-out;
+  border-radius: 2em;
+}
+
+.cardsEducations{ 
+  display: inline-flex;
+  
+  list-style-type: none;
+  text-align: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* habilidades */
 
@@ -426,9 +433,7 @@ rgba(0, 0, 0, 0.09) 0px -3px 5px;
   width: auto;
   max-width: 1361.51px;
 }
-.cardsEducations{
 
-}
 
 @media (max-width: 720px) {
 
@@ -461,5 +466,8 @@ p, a {
 .project-list{
   flex-direction: column;
 }
-
+.cardsEducations{
+  flex-direction: column;
+  align-items: center;
+}
 }

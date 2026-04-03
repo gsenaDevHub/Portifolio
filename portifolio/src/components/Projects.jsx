@@ -7,7 +7,7 @@ import { IoLogoJavascript } from "react-icons/io5";
 
 export function Project() {
   return (
-    <section className="project" id="project"> 
+    <section className="project" id="projects"> 
         {Dev.map((text, index) => (
         <div className="project-conteiner" key={index}>
           <h2>Projetos</h2>
