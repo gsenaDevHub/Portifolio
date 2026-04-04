@@ -1,13 +1,14 @@
 import { FaHtml5,FaReact,FaCss3Alt,FaNodeJs,FaPython,FaFigma  } from "react-icons/fa";
 import { PiMicrosoftExcelLogoFill } from "react-icons/pi";
 import { IoLogoJavascript } from "react-icons/io5";
+import './Experience.css';
 
 
 
 export function Experience() {
   return (
     <section className="experience" id="exp">
-        <div className="experience-content">
+        <div className="conteiner">
             <div className="cardExperience">
             <h2>Experiência Profissional</h2>
             <br />

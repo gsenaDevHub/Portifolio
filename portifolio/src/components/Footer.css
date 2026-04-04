@@ -1,0 +1,54 @@
+.footer p,
+.footer a {
+  color: white;
+  padding-left: 5px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.footer {
+  border:double, #202020;
+  padding: 2em;
+  margin-top: 2em;
+  background-color: rgba(40, 40, 40, 0.7);
+  border-top-right-radius: 2cap;
+  border-top-left-radius: 2cap;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+.footer .card-footer {
+  display: flex;
+  justify-content: center;   
+  align-items: center;
+  gap: 40px;                
+  margin: 10px;
+  flex-wrap: wrap;       
+}
+.footer-contact{
+  display: flex;
+  padding: 2em;
+  margin-bottom: 3em;
+  gap: 1em;
+  max-height: 80px;
+  width: 250px;
+  text-align: center;
+  color: white;
+  justify-content: center; 
+  align-items: center;
+  background-color: #3a3a3a;
+  border-radius: 2cap;
+  transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+
+}
+.footer-contact:hover{
+  background-color: #444444;
+  box-shadow: var(--neon-box-shadow);
+  transform: scale(1.01);
+}
+.iconStyle{
+  gap: 30px;
+}

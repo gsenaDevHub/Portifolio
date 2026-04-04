@@ -1,4 +1,5 @@
 import Dev from '../constants/Dev.json';
+import './Education.css';
 import { PieChart } from '@mui/x-charts/PieChart';
 import { useState, useEffect } from 'react';
 
@@ -56,49 +57,51 @@ export function Education(){
     }, []);
     return (
         <>
-        
             <section className="educations" id="education">
-                <div className="education-container">
+                <div className="conteiner">
                     <h2>Competência</h2>
                     {Dev.map((text, index) => (
                         <div key={index} className="cardsEducations">
                             <ul style={{ color:"white", padding: 0 }}>
-                                <div style={{ margin: "20px", decoration: "none" }}>
+                                <div className="cardProgress" >
                                     <li><p>{text.CursoGraduação}</p></li>
-                                    <progress value={progress} max="100"></progress>
+                                    <p><progress value={progress} max="100"></progress>
+                                    {progress}%</p>
                                 </div>
-                                <div style={{ margin: "20px" }}>
+                                <div className="cardProgress" >
                                     <li><p>{text.CursoTec}</p></li>
-                                    <progress value="100" max="100"></progress>
+                                    <p><progress value="100" max="100"></progress>
+                                    100%</p>
                                 </div>
-                                <div style={{ margin: "20px" }}>
+                                <div className="cardProgress" >
                                     <li><p>{text.CursoExtra}</p></li>
-                                    <progress value="100" max="100"></progress>
+                                    <p><progress value="100" max="100"></progress>
+                                    100%</p>
                                 </div>
-                                <div style={{ margin: "20px" }}>
+                                <div className="cardProgress" >
                                     <li><p>{text.CursoExtra2}</p></li>
-                                    <progress value="100" max="100"></progress>
+                                    <p><progress value="100" max="100"></progress>
+                                    100%</p>
                                 </div>
-                                <div style={{ margin: "20px" }}>
+                                <div className="cardProgress" >
                                     <li><p>{text.CursoExtra3}</p></li>
-                                    <progress value="100" max="100"></progress>
+                                    <p><progress value="100" max="100"></progress>
+                                    100%</p>
                                 </div>
-                            </ul>                    
+                            </ul>
                         <PieChart 
-                            className='educationGrafico'
-                            series={[
-                                {
+                        className='editar'
+                        series={[
+                            {
                                 data: desktopOS,
                                 highlightScope: { fade: 'global', highlight: 'item' },
                                 faded: { innerRadius: 30, additionalRadius: -30, color: 'gray' },
                                 valueFormatter,
-                                },
-                            ]}
-                            height={300}
-                            width={300}
+                            },
+                        ]}
                         />
                     </div>
-                ))}
+                ))}                
             </div>
             </section>
         </>

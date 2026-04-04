@@ -1,4 +1,5 @@
 import Dev from '../constants/Dev.json';
+import './Projects.css';
 import { FaHtml5,FaReact,FaCss3Alt,FaNodeJs,FaPython,FaFigma  } from "react-icons/fa";
 import { PiMicrosoftExcelLogoFill } from "react-icons/pi";
 import { IoLogoJavascript } from "react-icons/io5";
@@ -9,7 +10,7 @@ export function Project() {
   return (
     <section className="project" id="projects"> 
         {Dev.map((text, index) => (
-        <div className="project-conteiner" key={index}>
+        <div className="conteiner" key={index}>
           <h2>Projetos</h2>
           <div className='project-list'>
             <br />

@@ -1,0 +1,30 @@
+.cardContact{
+  display: inline-flex;
+  flex-wrap: wrap;
+  text-align: center;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.card-identity{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1em;
+  margin-top: 20px;
+  width: auto;
+  max-width: 60%;
+}
+
+.cardContact img {
+  max-width: 350px;
+  width: auto;
+  max-height: 350px;
+  height: auto;
+  border-radius: 6em;
+  transition: all 0.5s ease-in-out;
+}
+.cardContact img:hover {
+  transform: scale(1.01);
+  box-shadow: var(--neon-box-shadow);
+}

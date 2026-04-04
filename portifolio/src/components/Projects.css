@@ -1,0 +1,44 @@
+.project-list{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  width: auto;
+  max-width: 1361.51px;
+  justify-content: center;
+}
+
+.projectDiv{
+  display: flex;
+  flex-wrap: wrap;
+  border: 3px solid #000;
+  background-color: #2B2B2B;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, 
+rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, 
+rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border-radius: 1cap;
+  justify-content: center;
+  width: auto;
+  max-width: 100%;
+  padding: 1em 0;
+  margin: 1em;
+  gap: 1em;
+  transition: transform 0.5s ease-in-out;
+}
+.projectDiv img{
+  width: auto;
+  max-width: 80%;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px,
+   rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, 
+   rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  margin-bottom: 20px;
+  border: grey solid;
+  border-radius: 2cap;
+  transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+.projectDiv:hover{
+  transform: scale(1.01);
+}
+.projectDiv img:hover{
+  transform: scale(1.01);
+  box-shadow: var(--neon-box-shadow);
+}

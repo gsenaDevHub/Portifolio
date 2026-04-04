@@ -1,5 +1,6 @@
 import { FaGithub,FaLinkedin,FaWhatsapp  } from "react-icons/fa";
 import { MdAlternateEmail } from "react-icons/md";
+import './Footer.css';
 
 export function Footer() {
   return (

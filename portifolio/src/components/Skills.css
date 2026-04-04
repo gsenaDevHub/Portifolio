@@ -1,0 +1,27 @@
+
+.card-list1:hover, .card-list2:hover {
+  transform: scale(1.01);
+  transition: transform 0.3s ease;
+}
+
+.skils-linguagens {
+  display: inline-flex;
+  align-items: center;
+  margin: 1em;
+  justify-content: center;
+  border:2px solid #fff;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px,
+  rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px,
+  rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border-radius: 1em;
+  width: 130px;
+  height: 130px;
+  background-color: #3a3a3a;
+  transition: all 0.5s ease-in-out;
+}
+
+.skils-linguagens:hover{
+  transform: scale(1.01);
+  background-color: #444444;
+  box-shadow: var(--neon-box-shadow);
+}
