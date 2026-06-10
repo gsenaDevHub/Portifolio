@@ -12,12 +12,6 @@ export function Skills() {
         <h2>Linguagens e Ferramentas</h2>
           <div className='skils-linguagens'>
             <article>
-              <FaPython size={number} color="white" className="icons-linguagens"/>
-              <p>Python</p>
-            </article>
-        </div>
-          <div className='skils-linguagens'>
-            <article>
               <IoLogoJavascript size={number} color="white" className="icons-linguagens"/>
               <p>JavaScript</p>
             </article>
